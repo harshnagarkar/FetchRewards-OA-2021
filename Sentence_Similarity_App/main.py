@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import request
 from process import CompareString
+
 app = Flask(__name__)
 instance=CompareString()
 
@@ -15,9 +16,9 @@ def processData():
         ans = instance.sentenceSimilarity(request.form["s1"],request.form["s2"])
         print(ans)
     #   user = request.form['nm']
-        return "<p>Compare String!</p>"
+        return "<p>Similarity: "+str(ans)+"</p>"
     else:
-      return "<p>PLease submit data in post with variable s1 and s2!</p>"
+      return "<p>Please submit data in post with variable s1 and s2!</p>"
 
 if __name__ == "__main__":
     app.run()
