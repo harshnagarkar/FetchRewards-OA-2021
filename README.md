@@ -1,5 +1,5 @@
 # Fetch Rewards Online Assesment
-## Design Sentence Similarity API from scratch
+## Design Sentence Similarity API from scratch (MIT License)
 
 ### Getting started
 Run the following command to download the docker image and run it port 5000
