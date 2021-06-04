@@ -1,0 +1,1 @@
+Sentence_Similarity_App/__pycache__/
